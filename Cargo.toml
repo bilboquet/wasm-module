@@ -15,10 +15,11 @@ wai-bindgen-rust = "0.2.3"
 
 # Information for cargo wamp
 [package.metadata.wapm]
-namespace = "jf"  # Replace this with your WAPM username, not use yet only do local export
+namespace = "jf" # Replace this with your WAPM username, not use yet only do local export
 abi = "none"
-build =""
+build = ""
 
 [package.metadata.wapm.bindings]
 wai-version = "0.2.0"
 exports = "wasm-mod-exported.wai"
+imports = ["host-exported.wai"]
