@@ -1,2 +1,4 @@
 add: func(a: u32, b:u32) -> u32
 start: func() -> u32
+// a function that takes a string as parameter and return a modified string
+greet: func(msg: string) -> string

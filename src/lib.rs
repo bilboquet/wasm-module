@@ -19,4 +19,9 @@ impl wasm_mod_exported::WasmModExported for WasmModExported {
         host_exported::hello();
         0u32
     }
+
+    // take ownership of args because wasm run in sandbox
+    fn greet(name: String) -> String {
+        format!("Hello {}!", name)
+    }
 }
