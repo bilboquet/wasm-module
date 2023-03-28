@@ -18,7 +18,11 @@ impl wasm_mod_exported::WasmModExported for WasmModExported {
 
     fn start() -> u32 {
         host_exported::hello();
-        env::abort();
+        env::zero_arg();
+        env::one_arg(1);
+        env::two_arg(2, 1);
+        env::one_string_arg("one string arg");
+        // env::abort("message", 0, 0);
         0u32
     }
 
