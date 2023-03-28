@@ -1,1 +1,2 @@
-echo: func()
+// very simple function with no args and no return value
+hello: func()

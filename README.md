@@ -29,7 +29,8 @@ target = "wasm32-unknown-unknown"
 
 Experimental Rust is required, hence the `rust-toolchain.toml`
 
-/!\
+/!\\
+
 if used `cargo install wasmer-pack-cli` has to be executed in the context of the `rust-toolchain.toml` above, else strange link errors will happen.
 
 ### 3

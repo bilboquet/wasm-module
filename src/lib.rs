@@ -5,7 +5,6 @@ wai_bindgen_rust::export!("wasm-mod-exported.wai");
 // what we are using from the outside
 wai_bindgen_rust::import!("host-exported.wai");
 
-
 // looks like wai_bindgen_rust::export is buggy on this point it forget to declare this struct
 // it's documented in the example
 struct WasmModExported;
@@ -17,7 +16,7 @@ impl wasm_mod_exported::WasmModExported for WasmModExported {
     }
 
     fn start() -> u32 {
-        host_exported::echo();
+        host_exported::hello();
         0u32
     }
 }
