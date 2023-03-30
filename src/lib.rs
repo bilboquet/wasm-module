@@ -22,8 +22,16 @@ impl wasm_mod_exported::WasmModExported for WasmModExported {
         env::one_arg(1);
         env::two_arg(2, 1);
         env::one_string_arg("one string arg");
-        // env::abort("message", 0, 0);
+        env::abort("message", 0, 0);
         0u32
+    }
+
+    fn fillarray_u8(len: u32, value: u8) -> Vec<u8> {
+        vec![value; len as usize]
+    }
+
+    fn fillarray_static_u8(args: Vec<u8>) -> Vec<u8> {
+        args.iter().map(|x| x + 1).collect()
     }
 
     // take ownership of args because wasm run in sandbox

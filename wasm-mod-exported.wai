@@ -1,4 +1,7 @@
 add: func(a: u32, b:u32) -> u32
 start: func() -> u32
+fillarray-u8: func(len: u32, value: u8) -> list<u8>
+fillarray-static-u8: func(args: list<u8>) -> list<u8>
+
 // a function that takes a string as parameter and return a modified string
 greet: func(msg: string) -> string
