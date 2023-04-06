@@ -1,5 +1,12 @@
 add: func(a: u32, b:u32) -> u32
-start: func() -> u32
+call-hello: func() -> s32
+call-zero-arg: func() -> s32
+call-one-arg: func() -> s32
+call-two-args: func() -> s32
+call-one-string-arg: func() -> s32
+call-one-array-arg: func() -> s32
+call-abort: func() -> s32
+
 fillarray-u8: func(len: u32, value: u8) -> list<u8>
 fillarray-static-u8: func(args: list<u8>) -> list<u8>
 
